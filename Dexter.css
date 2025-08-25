@@ -4,8 +4,13 @@ body {
 #blood {
     position: absolute;
     width: 500px;
-    opacity: 50%;
+    opacity: 30%;
     top: 130px;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+#blood:hover {
+    opacity: 100%;  
 }
 
 .resume {
@@ -29,7 +34,7 @@ body {
 }
 #dex-img {
     transition-property:  box-shadow ;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 #dex-img:hover {
     /* outline: 5px solid aqua; */
