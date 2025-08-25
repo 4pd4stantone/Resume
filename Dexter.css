@@ -25,28 +25,24 @@ body {
    
 }
 
-.sections {
-    /* outline: 1px solid white; */
-    
-}
-#section1 {
-    /* outline: 1px solid black; */
-}
+
 #dex-img {
-    transition-property:  box-shadow ;
-    transition-duration: 1s;
+    transition-property: box-shadow;
+    transition-duration: 2s;
+    z-index: 1;
+    width: 100px;
+    height: 100px;  
+    object-fit: cover;
 }
 #dex-img:hover {
     /* outline: 5px solid aqua; */
-    box-shadow: 10px 10px 10px #B20000;
+    box-shadow: 10px 10px 20px #B20000;
 }
 
 .subsection1 {
     display: flex;
 }
-.boxes {
-    /* outline: 1px solid white; */
-}
+
 
 #box1 {
     /* outline: 5px solid red; */
@@ -54,11 +50,12 @@ body {
     height: 100px;
     display: flex;
 }
-#subbox1 * {
+#subbox1 {
     /* outline: 5px solid pink; */
     width: 100px;
     height: 100px;  
     object-fit: cover;
+    z-index: 1;
 }
 #subbox2 {
     /* outline: 1px solid pink; */
@@ -318,4 +315,22 @@ p {
 #langSkills {
     margin: 0px;
 }
-                  
+
+@media screen and (max-width: 600px) {
+    .subsection1 {
+        flex-direction: column;
+        max-width: 100%
+    }
+    #section2 {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .resume {
+        height: 1420px;
+    }
+    #box3 {
+        width: 400px;
+        margin-bottom: 60px;
+    }
+}
+               
